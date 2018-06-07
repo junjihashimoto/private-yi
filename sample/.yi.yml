@@ -1,0 +1,11 @@
+Frontend: vty
+Keymap: emacs
+ModeParams:
+  javascript:
+    Suffixies:
+      - js
+      - ts
+    IndentSettings:
+      expandTabs: true
+      tabSize: 2
+      shiftWidth: 2
