@@ -1,0 +1,25 @@
+flags: {}
+packages:
+- .
+- vty
+- location: ./yi
+  subdirs:
+  - yi-core
+  - yi-dynamic-configuration
+  - yi-frontend-vty
+  - yi-fuzzy-open
+  - yi-keymap-cua
+  - yi-keymap-emacs
+  - yi-keymap-vim
+  - yi-mode-haskell
+  - yi-mode-javascript
+  - yi-misc-modes
+  - yi-intero
+  - yi-ireader
+  - yi-language
+  - yi-snippet
+#extra-deps:
+#- gio-0.13.4.1
+#- gtk-0.14.7
+#- yi-language-0.17.1
+resolver: lts-11.11
