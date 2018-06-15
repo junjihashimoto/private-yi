@@ -20,7 +20,7 @@ import Yi.Config.Simple.Types
 import Yi.Config.Simple hiding (option)
 import Yi.Mode.Common
 import Yi.Buffer.Misc (lineMoveRel)
-import Lens.Micro.Platform ((.~),(%~))
+import Lens.Micro.Platform ((.~),(%~),(.=))
 
 
 import Yi.Config.Default.HaskellMode    (configureHaskellMode)
@@ -76,6 +76,7 @@ myConfig param = do
     "emacs" -> configureEmacs
     "vim" -> configureVim
     _ -> configureVim
+  configDisableSystemClipboardA .= True
   configureHaskellMode
   configureJavaScriptMode
   configureMiscModes
